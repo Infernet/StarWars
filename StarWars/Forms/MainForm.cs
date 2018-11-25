@@ -20,46 +20,46 @@ namespace StarWars.Forms
         public MainForm()
         {
             InitializeComponent();
-            Singleton.Client = new Client();
-            listSolders.DataSource = Singleton.Client.SoldersList;
+            Singleton.GetSingleton().Client = new Client();
+            listSolders.DataSource = Singleton.GetSingleton().Client.SoldersList;
             listSolders.DisplayMember = "UnitСode";
 
         }
 
         private void buttonCreateAssault_Click(object sender, EventArgs e)
         {
-            Singleton.Client.CreateAssault();
+            Singleton.GetSingleton().Client.CreateAssault();
             UpdateForm();
         }
 
         private void buttonCreateGunner_Click(object sender, EventArgs e)
         {
-            Singleton.Client.CreateGunner();
+            Singleton.GetSingleton().Client.CreateGunner();
             UpdateForm();
         }
 
         private void buttonCreateRecon_Click(object sender, EventArgs e)
         {
-            Singleton.Client.CreateRecon();
+            Singleton.GetSingleton().Client.CreateRecon();
             UpdateForm();
         }
 
         private void buttonCreateSniper_Click(object sender, EventArgs e)
         {
-            Singleton.Client.CreateSniper();
+            Singleton.GetSingleton().Client.CreateSniper();
             UpdateForm();
         }
 
         private void UpdateForm()
         {
             listSolders.DataSource = null;
-            listSolders.DataSource = Singleton.Client.SoldersList;
+            listSolders.DataSource = Singleton.GetSingleton().Client.SoldersList;
             listSolders.DisplayMember = "UnitСode";
         }
 
         private void buttonShowSolderStats_Click(object sender, EventArgs e)
         {
-            if (Singleton.CurrentSolder != null)
+            if (Singleton.GetSingleton().CurrentSolder != null)
                 this.ShowNextForm(new SolderInfoForm());
             else
                 MessageBox.Show("Для начала нужно выбрать солдата", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -67,13 +67,13 @@ namespace StarWars.Forms
 
         private void listSolders_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Singleton.CurrentSolder = listSolders.SelectedItem as AbstractSolder;
+            Singleton.GetSingleton().CurrentSolder = listSolders.SelectedItem as AbstractSolder;
         }
 
         private void buttonShowSelectedSolderMessage_Click(object sender, EventArgs e)
         {
-            if (Singleton.CurrentSolder != null)
-                MessageBox.Show(Singleton.CurrentSolder.Message(), "Доклад по бойцу " + Singleton.CurrentSolder.UnitСode);
+            if (Singleton.GetSingleton().CurrentSolder != null)
+                MessageBox.Show(Singleton.GetSingleton().CurrentSolder.Message(), "Доклад по бойцу " + Singleton.GetSingleton().CurrentSolder.UnitСode);
             else
                 MessageBox.Show("Для начала нужно выбрать солдата", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }

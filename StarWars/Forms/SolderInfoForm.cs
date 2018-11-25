@@ -18,7 +18,7 @@ namespace StarWars.Forms
         public SolderInfoForm()
         {
             InitializeComponent();
-            this.Text = "Сведения о бойце, " + Singleton.CurrentSolder.UnitСode;
+            this.Text = "Сведения о бойце, " + Singleton.GetSingleton().CurrentSolder.UnitСode;
             string path = Application.StartupPath + @"\Resources\Images\";
             switch (WhatIsSolder())
             {
@@ -40,22 +40,22 @@ namespace StarWars.Forms
             pictureSolderPhoto.Image = Image.FromFile(path);
             pictureSolderPhoto.SizeMode = PictureBoxSizeMode.Zoom;
 
-            textUnitCode.Text = Singleton.CurrentSolder.UnitСode;
-            textRank.Text = Singleton.CurrentSolder.Rank;
-            textWeapon.Text = Singleton.CurrentSolder.WhatIsWeapon();
-            textGadget.Text = Singleton.CurrentSolder.WhatIsGadgets();
-            textSpecialty.Text = Singleton.CurrentSolder.WhatIsSpecialty();
+            textUnitCode.Text = Singleton.GetSingleton().CurrentSolder.UnitСode;
+            textRank.Text = Singleton.GetSingleton().CurrentSolder.Rank;
+            textWeapon.Text = Singleton.GetSingleton().CurrentSolder.WhatIsWeapon();
+            textGadget.Text = Singleton.GetSingleton().CurrentSolder.WhatIsGadgets();
+            textSpecialty.Text = Singleton.GetSingleton().CurrentSolder.WhatIsSpecialty();
         }
 
         private SolderType WhatIsSolder()
         {
-            if (Singleton.CurrentSolder is Assault)
+            if (Singleton.GetSingleton().CurrentSolder is Assault)
                 return SolderType.Assault;
-            else if (Singleton.CurrentSolder is Gunner)
+            else if (Singleton.GetSingleton().CurrentSolder is Gunner)
                 return SolderType.Gunner;
-            else if (Singleton.CurrentSolder is Recon)
+            else if (Singleton.GetSingleton().CurrentSolder is Recon)
                 return SolderType.Recon;
-            else if (Singleton.CurrentSolder is Sniper)
+            else if (Singleton.GetSingleton().CurrentSolder is Sniper)
                 return SolderType.Sniper;
             else
                 Environment.Exit(5);

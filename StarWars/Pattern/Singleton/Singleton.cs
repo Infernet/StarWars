@@ -10,19 +10,19 @@ namespace StarWars.Pattern.Singleton
 {
     class Singleton
     {
-        public static Client Client { get; set; }
-        public static AbstractSolder CurrentSolder { get; set; }
+        public Client Client { get; set; }
+        public AbstractSolder CurrentSolder { get; set; }
 
         private static Singleton SingletonClient;
 
         private Singleton()
         {
-
+            Client = new Client();
         }
 
         public static Singleton GetSingleton()
         {
-            if(SingletonClient == null)
+            if (SingletonClient == null)
                 SingletonClient = new Singleton();
             return SingletonClient;
         }
