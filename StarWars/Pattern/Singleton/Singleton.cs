@@ -14,13 +14,16 @@ namespace StarWars.Pattern.Singleton
         public static AbstractSolder CurrentSolder { get; set; }
 
         private static Singleton SingletonClient;
+
+        private Singleton()
+        {
+
+        }
+
         public static Singleton GetSingleton()
         {
             if(SingletonClient == null)
-            {
                 SingletonClient = new Singleton();
-                return SingletonClient;
-            }
             return SingletonClient;
         }
     }
