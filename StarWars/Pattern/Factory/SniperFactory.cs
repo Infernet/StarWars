@@ -7,7 +7,7 @@ using StarWars.Classes.Gadgets;
 using StarWars.Classes.Solders;
 using StarWars.Classes.Weapons;
 
-namespace StarWars.Classes.Factory
+namespace StarWars.Pattern.Factory
 {
     class SniperFactory : AbstractFactory
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StarWars.Classes.Factory
+namespace StarWars.Pattern.Factory
 {
     abstract class AbstractFactory
     {

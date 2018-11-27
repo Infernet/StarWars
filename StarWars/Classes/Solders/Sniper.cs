@@ -15,7 +15,7 @@ namespace StarWars.Classes.Solders
         public Sniper(string unitCode,int number, string rank, AbstractWeapon gun, AbstractGadgets gadgets)
     : base(unitCode+" №"+number.ToString(), rank, gun,gadgets)
         {
-            Camouflage = "Маскировачный камуфляж";
+            Camouflage = "Маскировочный камуфляж";
         }
 
         public override string Message()

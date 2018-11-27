@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Client.cs" />
+    <Compile Include="Pattern\Singleton\Client.cs" />
     <Compile Include="Classes\Enums.cs" />
     <Compile Include="Forms\BaseForm.cs">
       <SubType>Form</SubType>
@@ -91,7 +91,6 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pattern\Singleton\Singleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\BaseForm.resx">

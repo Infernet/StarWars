@@ -1,15 +1,9 @@
 ﻿using StarWars.Classes;
 using StarWars.Classes.Solders;
-using StarWars.Pattern.Singleton;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using StarWars.Pattern.Singleton;
 
 namespace StarWars.Forms
 {
@@ -18,7 +12,7 @@ namespace StarWars.Forms
         public SolderInfoForm()
         {
             InitializeComponent();
-            this.Text = "Сведения о бойце, " + Singleton.GetSingleton().CurrentSolder.UnitСode;
+            this.Text = "Сведения о бойце, " + Client.GetInstance().CurrentSolder.UnitСode;
             string path = Application.StartupPath + @"\Resources\Images\";
             switch (WhatIsSolder())
             {
@@ -40,22 +34,22 @@ namespace StarWars.Forms
             pictureSolderPhoto.Image = Image.FromFile(path);
             pictureSolderPhoto.SizeMode = PictureBoxSizeMode.Zoom;
 
-            textUnitCode.Text = Singleton.GetSingleton().CurrentSolder.UnitСode;
-            textRank.Text = Singleton.GetSingleton().CurrentSolder.Rank;
-            textWeapon.Text = Singleton.GetSingleton().CurrentSolder.WhatIsWeapon();
-            textGadget.Text = Singleton.GetSingleton().CurrentSolder.WhatIsGadgets();
-            textSpecialty.Text = Singleton.GetSingleton().CurrentSolder.WhatIsSpecialty();
+            textUnitCode.Text = Client.GetInstance().CurrentSolder.UnitСode;
+            textRank.Text = Client.GetInstance().CurrentSolder.Rank;
+            textWeapon.Text = Client.GetInstance().CurrentSolder.WhatIsWeapon();
+            textGadget.Text = Client.GetInstance().CurrentSolder.WhatIsGadgets();
+            textSpecialty.Text = Client.GetInstance().CurrentSolder.WhatIsSpecialty();
         }
 
         private SolderType WhatIsSolder()
         {
-            if (Singleton.GetSingleton().CurrentSolder is Assault)
+            if (Client.GetInstance().CurrentSolder is Assault)
                 return SolderType.Assault;
-            else if (Singleton.GetSingleton().CurrentSolder is Gunner)
+            else if (Client.GetInstance().CurrentSolder is Gunner)
                 return SolderType.Gunner;
-            else if (Singleton.GetSingleton().CurrentSolder is Recon)
+            else if (Client.GetInstance().CurrentSolder is Recon)
                 return SolderType.Recon;
-            else if (Singleton.GetSingleton().CurrentSolder is Sniper)
+            else if (Client.GetInstance().CurrentSolder is Sniper)
                 return SolderType.Sniper;
             else
                 Environment.Exit(5);

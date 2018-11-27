@@ -38,6 +38,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonShowSelectedSolderMessage = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.buttonDeleteSolder = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -147,7 +148,7 @@
             this.buttonShowSelectedSolderMessage.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
             this.buttonShowSelectedSolderMessage.Location = new System.Drawing.Point(6, 101);
             this.buttonShowSelectedSolderMessage.Name = "buttonShowSelectedSolderMessage";
-            this.buttonShowSelectedSolderMessage.Size = new System.Drawing.Size(204, 61);
+            this.buttonShowSelectedSolderMessage.Size = new System.Drawing.Size(204, 49);
             this.buttonShowSelectedSolderMessage.TabIndex = 7;
             this.buttonShowSelectedSolderMessage.Text = "Доклад солдата";
             this.buttonShowSelectedSolderMessage.UseVisualStyleBackColor = false;
@@ -155,6 +156,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.buttonDeleteSolder);
             this.groupBox3.Controls.Add(this.buttonShowSelectedSolderMessage);
             this.groupBox3.Controls.Add(this.buttonShowSolderStats);
             this.groupBox3.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -164,6 +166,18 @@
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Выбранный солдат";
+            // 
+            // buttonDeleteSolder
+            // 
+            this.buttonDeleteSolder.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.buttonDeleteSolder.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
+            this.buttonDeleteSolder.Location = new System.Drawing.Point(6, 156);
+            this.buttonDeleteSolder.Name = "buttonDeleteSolder";
+            this.buttonDeleteSolder.Size = new System.Drawing.Size(204, 61);
+            this.buttonDeleteSolder.TabIndex = 8;
+            this.buttonDeleteSolder.Text = "Ликвидировать солдата";
+            this.buttonDeleteSolder.UseVisualStyleBackColor = false;
+            this.buttonDeleteSolder.Click += new System.EventHandler(this.buttonDeleteSolder_Click);
             // 
             // MainForm
             // 
@@ -193,6 +207,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button buttonShowSelectedSolderMessage;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button buttonDeleteSolder;
     }
 }
 
