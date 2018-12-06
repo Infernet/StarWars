@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using StarWars.Classes.Gadgets;
 using StarWars.Classes.Solders;
 using StarWars.Classes.Weapons;

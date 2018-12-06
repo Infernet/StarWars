@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StarWars.Classes.Solders.AbstractSolder">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAIAAAAAAAAAAAACgAAAAAIIAIAAI=</HashCode>
+      <FileName>Classes\Solders\AbstractSolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Solders.Assault">
+    <Position X="7" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="StarWars.Classes.Solders.AbstractSolder" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="3.661" />
+        <Point X="6" Y="5.375" />
+        <Point X="7.688" Y="5.375" />
+        <Point X="7.688" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAAAAA=</HashCode>
+      <FileName>Classes\Solders\Assault.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Solders.Gunner">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="StarWars.Classes.Solders.AbstractSolder" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="6" Y="3.661" />
+        <Point X="6" Y="5.375" />
+        <Point X="4.25" Y="5.375" />
+        <Point X="4.25" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAAAAA=</HashCode>
+      <FileName>Classes\Solders\Gunner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Solders.Recon">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="StarWars.Classes.Solders.AbstractSolder" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="3.661" />
+        <Point X="6" Y="5.375" />
+        <Point X="1.5" Y="5.375" />
+        <Point X="1.5" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAAIAA=</HashCode>
+      <FileName>Classes\Solders\Recon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Solders.Sniper">
+    <Position X="10.25" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="StarWars.Classes.Solders.AbstractSolder" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="3.661" />
+        <Point X="6" Y="5.375" />
+        <Point X="10.938" Y="5.375" />
+        <Point X="10.938" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIIAAAAA=</HashCode>
+      <FileName>Classes\Solders\Sniper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Weapons.AbstractWeapon">
+    <Position X="5.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\Weapons\AbstractWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Weapons.AssaultRifle">
+    <Position X="1" Y="11.5" Width="1.5" />
+    <InheritanceLine Type="StarWars.Classes.Weapons.AbstractWeapon" FixedFromPoint="true">
+      <Path>
+        <Point X="5.938" Y="10.103" />
+        <Point X="5.938" Y="11.125" />
+        <Point X="1.75" Y="11.125" />
+        <Point X="1.75" Y="11.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\Weapons\AssaultRifle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Weapons.MachineGun">
+    <Position X="4" Y="11.5" Width="1.5" />
+    <InheritanceLine Type="StarWars.Classes.Weapons.AbstractWeapon" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.938" Y="10.103" />
+        <Point X="5.938" Y="11.125" />
+        <Point X="4.75" Y="11.125" />
+        <Point X="4.75" Y="11.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\Weapons\MachineGun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Weapons.SniperRifle">
+    <Position X="7" Y="11.5" Width="1.5" />
+    <InheritanceLine Type="StarWars.Classes.Weapons.AbstractWeapon" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.938" Y="10.103" />
+        <Point X="5.938" Y="11.125" />
+        <Point X="7.812" Y="11.125" />
+        <Point X="7.812" Y="11.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\Weapons\SniperRifle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Weapons.TommyGun">
+    <Position X="10" Y="11.5" Width="1.5" />
+    <InheritanceLine Type="StarWars.Classes.Weapons.AbstractWeapon" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.938" Y="10.103" />
+        <Point X="5.938" Y="11.125" />
+        <Point X="10.875" Y="11.125" />
+        <Point X="10.875" Y="11.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\Weapons\TommyGun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Gadgets.AbstractGadgets">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\Gadgets\AbstractGadgets.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Gadgets.FirstAidKit">
+    <Position X="13.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\Gadgets\FirstAidKit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Gadgets.Grenade">
+    <Position X="15.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\Gadgets\Grenade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Gadgets.Jetpack">
+    <Position X="18" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\Gadgets\Jetpack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Classes.Gadgets.NoiseGenerator">
+    <Position X="20.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\Gadgets\NoiseGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Forms.BaseForm">
+    <Position X="23.5" Y="8.75" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\BaseForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Forms.MainForm" Collapsed="true">
+    <Position X="22" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAoAAIOBAACEIIACAACEaAAAAAAAAAaAAAAAIAAA=</HashCode>
+      <FileName>Forms\MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Forms.SolderInfoForm" Collapsed="true">
+    <Position X="24.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAZAQgACAAAACCBAAAAAAACAAAAAIAAA=</HashCode>
+      <FileName>Forms\SolderInfoForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Pattern.Factory.AbstractFactory">
+    <Position X="16.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAgAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pattern\Factory\AbstractFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Pattern.Factory.AssaultFartory" Collapsed="true">
+    <Position X="17.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pattern\Factory\AssaultFartory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Pattern.Factory.GunnerFactory" Collapsed="true">
+    <Position X="19.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pattern\Factory\GunnerFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Pattern.Factory.ReconFactory" Collapsed="true">
+    <Position X="13" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pattern\Factory\ReconFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Pattern.Factory.SniperFactory" Collapsed="true">
+    <Position X="15" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pattern\Factory\SniperFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarWars.Pattern.Singleton.Client">
+    <Position X="23.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAIAAAAAAAAABAAAMAAAAAAFAAAAQABAAAAEAAgAAA=</HashCode>
+      <FileName>Pattern\Singleton\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="StarWars.Classes.SolderType">
+    <Position X="23.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAQAAAAAQAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

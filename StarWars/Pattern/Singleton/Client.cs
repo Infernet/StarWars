@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using StarWars.Pattern.Factory;
-using StarWars.Classes.Gadgets;
 using StarWars.Classes.Solders;
-using StarWars.Classes.Weapons;
 
 namespace StarWars.Pattern.Singleton
 {

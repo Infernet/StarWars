@@ -1,10 +1,6 @@
 ﻿using StarWars.Classes.Weapons;
 using StarWars.Classes.Gadgets;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StarWars.Classes.Solders
 {
